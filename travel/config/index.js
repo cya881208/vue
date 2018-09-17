@@ -13,7 +13,7 @@ module.exports = {
     //代理转发 webpack server 功能
     proxyTable: {
       '/api': {
-        target : 'http://localhost:8080',
+        target : 'http://localhost:8081',
         pathRewrite : {
           '^/api' : 'static/mock' //请求api 转发到 static/mock
           
